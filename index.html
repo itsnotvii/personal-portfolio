@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">   
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+   
+   <link rel="icon" href="J.png" type="image/png" />
+
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Thomas Johnson | Portfolio</title>
+   <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+   <header> 
+      <div class="logo-container">
+         <img src="J.png" alt="Logo" class="logo">
+      </div>
+      <nav>
+         <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <section class="hero" id="home">
+      <div class="hero-content">
+         <div class="title-container">
+            <h1 class="main-title">AN INTUITIVE DESIGN</h1>
+            <h2 class="name-title">THOMAS JOHNSON</h2>
+            <a href="#projects" class="hero-btn">SEE MY WORK</a>
+         </div>
+         
+         <div id="tile-grid-container">
+            <div id="tile-grid"></div>
+         </div>
+      
+      </div>
+   </section>
+
+   <section class="projects" id="projects">
+      <h2>PROJECTS</h2>
+   
+      <div class="project-list">
+         
+         <!-- Bakery Management Project -->
+         <div class="project-item" data-expanded="false">
+            <div class="project-header">
+               <h3>Efficient Data Management System</h3>
+               <div style="display: flex; align-items: center; gap: 1rem;">
+                  <div class="project-logos">
+                     <span class="tooltip-wrapper" data-tooltip="Java">
+                        <img src="images/newjava.png" alt="Java Logo">
+                     </span>
+                     <span class="tooltip-wrapper" data-tooltip="Eclipse IDE">
+                        <img src="images/eclipse.png" alt="Eclipse Logo">
+                     </span>
+                     <span class="tooltip-wrapper" data-tooltip="VS Code">
+                        <img src="images/vscode.png" alt="VS Code Logo">
+                     </span>
+                     <span class="tooltip-wrapper" data-tooltip="GitHub">
+                        <img src="images/github.png" alt="Github logo">
+                     </span>
+                  </div>
+                  <button class="dropdown-toggle" aria-label="Toggle details">
+                  <svg class="dropdown-arrow" viewBox="0 0 24 24">
+                     <path fill="currentColor" d="M7 10l5 5 5-5z"/>
+                  </svg>
+                  </button>
+               </div>
+            </div>
+
+            <div class="project-content">
+               <ul>
+                  <li>Efficient Data Structure: Utilizes binary search trees (BST) and hash maps for quick lookups and inventory management.</li>
+                  <li>Unique Item Identification: Each bakery product is assigned a unique ISBN-style ID for easy tracking.</li>
+                  <li>User Access Levels:
+                     <ul>
+                        <li>Guest: Browse menu and view products, and can place orders as a guest.</li>
+                        <li>Customer: Similar to guest, but can track order history.</li>
+                        <li>Employee: Manage inventory, update product details, and process orders.</li>
+                        <li>Manager: Full control, including order management, employee management, and stock monitoring.</li>
+                     </ul>
+                  </li>
+                  <li>Streamlined Operations: Optimized for smooth, efficient management of bakery data from front-end to back-end.</li>
+               </ul>
+            </div>
+         </div>
+              
+         <!-- Personal Portfolio Website Project -->
+         <div class="project-item" data-expanded="false">
+            <div class="project-header">
+               <h3>My Portfolio Website</h3>
+               <div style="display: flex; align-items: center; gap: 1rem;">
+                  <div class="project-logos">
+                     <span class="tooltip-wrapper" data-tooltip="HTML">
+                        <img src="images/endhtml.png" alt="html logo">
+                     </span>
+                     <span class="tooltip-wrapper" data-tooltip="CSS">
+                        <img src="images/nextcss.png" alt="css logo">
+                     </span>
+                     <span class="tooltip-wrapper" data-tooltip="JavaScript">
+                        <img src="images/javascript.png" alt="javascript logo">
+                     </span>
+                     <span class="tooltip-wrapper" data-tooltip="VS Code">
+                        <img src="images/vscode.png" alt="VS Code Logo">
+                     </span>
+                     <span class="tooltip-wrapper" data-tooltip="GitHub">
+                        <img src="images/github.png" alt="Github logo" />
+                     </span>
+                  </div>
+                  <button class="dropdown-toggle" aria-label="Toggle details">
+                     <svg class="dropdown-arrow" viewBox="0 0 24 24">
+                     <path fill="currentColor" d="M7 10l5 5 5-5z"/>
+                     </svg>
+                  </button>
+               </div>
+            </div>
+
+            <div class="project-content">
+               <ul>
+                  <li>A sleek, and well-designed website to showcase myself, and my work. Feel free to drop suggestions, or contact me in the contact section below!</li>
+                  <li>Implemented a clean HTML backbone, and crafted an organized CSS overlay, with the use of effective JavaScript.</li>
+               </ul>
+            </div>
+         </div>
+   
+      </div> 
+   </section>
+   
+   <section class="about" id="about">
+      <h2>ABOUT ME</h2>
+      <div class="about-container">
+         <div class="about-image">
+            <div class="image-wrapper">
+               <img src="images/IMG_8842.png" alt="Thomas Johnson" loading="lazy" />
+               <div class="image-overlay"></div>
+            </div>
+         </div>
+         <div class="about-text">
+            <p data-animate="true">My name is Thomas Johnson, born and raised in Kobe, Japan. I developed a passion for electronics and computers at an early age.</p>
+            <p data-animate="true">In 2015, I moved to the United States to pursue my education. After completing high school, I enrolled at De Anza Community College to study Computer Science.</p>
+            <p data-animate="true">I'm now continuing my journey at San Jose State University, majoring in Software Engineering.</p>
+            <p data-animate="true">I'm a passionate problem-solver, always eager to create innovative solutions through technology.</p>
+         </div>
+      </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+      <h2>GALLERY</h2>
+      <div class="gallery-container">
+         <div class="gallery-track">
+         <!-- Gallery Item 1 -->
+            <div class="gallery-item">
+               <div class="item-overlay">
+                  <img src="images/sannomiyatower.png" loading="lazy">
+                  <div class="item-caption">
+                     <h3>My Hometown</h3>
+                     <p>Sannomiya Station Kobe</p>
+                  </div>
+               </div>
+            </div>
+         
+            <!-- Gallery Item 2 -->
+            <div class="gallery-item">
+               <div class="item-overlay">
+                  <img src="images/BufferedReader.png" loading="lazy">
+                  <div class="item-caption">
+                     <h3>A Code Snippet</h3>
+                     <p>Java Code BufferedReader</p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Gallery Item 3 -->
+            <div class="gallery-item">
+               <div class="item-overlay">
+                  <img src="images/Castle.png" loading="lazy">
+                  <div class="item-caption">
+                     <h3>Hiking!</h3>
+                     <p>A Trail In Castle Rock State Park</p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Gallery Item 4 -->
+            <div class="gallery-item">
+               <div class="item-overlay">
+                  <img src="images/jsgallerycode.png" loading="lazy">
+                  <div class="item-caption">
+                     <h3>A piece of this website</h3>
+                     <p>Gallery functionality in JavaScript</p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Gallery Item 5 -->
+            <div class="gallery-item">
+               <div class="item-overlay">
+                  <img src="images/literallythisimage.png" loading="lazy">
+                  <div class="item-caption">
+                     <h3>Like a mirror...</h3>
+                     <p>The code for this exact image in HTML</p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Gallery Item 6 -->
+            <div class="gallery-item">
+               <div class="item-overlay">
+                  <img src="images/fancybread.png" loading="lazy">
+                  <div class="item-caption">
+                     <h3>Good Food!</h3>
+                     <p>A Loaf Of Sorrel's Bread In SF</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="gallery-nav">
+            <button class="gallery-prev" aria-label="Previous">
+                <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <div class="gallery-dots"></div>
+            <button class="gallery-next" aria-label="Next">
+                <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+        </div>
+      </div>
+   </section>
+   
+
+   <section class="contact" id="contact">
+      <h2>Get In Touch</h2>
+      <form id="contact-form">
+         <input type="text" id="name" placeholder="Your Name" required />
+         <input type="email" id="email" placeholder="Your Email" required />
+         <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+         <button type="submit" class="btn">Message Me</button>
+      </form>
+
+      <h3 style="margin-top: 2rem; text-align: center;">Let's Connect!</h3>
+      <div class="social-logos">
+         <a href="https://github.com/itsnotvii" target="_blank">
+            <span class="tooltip-wrapper" data-tooltip="GitHub">
+               <img src="images/github.png" alt="Github logo" />
+            </span>
+         </a>
+         <a href="https://www.linkedin.com/in/thomas-johnson-821603327/" target="_blank">
+            <span class="tooltip-wrapper" data-tooltip="LinkedIn">
+               <img src="images/endlinkedin.png" alt="LinkedIn logo"/>
+            </span>
+         </a>
+      </div>
+   </section>
+
+   <footer>
+      &copy; 2025 Thomas Johnson. Forged from the ground up.
+   </footer>
+ 
+   <script src="script.js"></script>
+
+   <button id="go-to-top" class="go-to-top-btn" aria-label="Go to top">
+      <svg viewBox="0 0 24 24">
+         <path fill="currentColor" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+      </svg>
+   </button>
+
+   <div class="image-modal">
+      <button class="close-modal">&times;</button>
+      <img src="" alt="">
+   </div>
+
+  <!-- Lightbox Modal -->
+   <div class="lightbox">
+      <button class="close-lightbox">&times;</button>
+      <div class="lightbox-content">
+         <img src="" alt="" id="lightbox-image">
+         <div class="lightbox-caption"></div>
+      </div>
+   </div>
+</body>
+</html>
